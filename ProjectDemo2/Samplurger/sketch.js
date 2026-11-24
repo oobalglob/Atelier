@@ -90,8 +90,8 @@ function drawScene1() {
   let x = map(speed, slowest, fastest, 0, width);
   let y = map(volume, 0, 1, height, 70);
   stroke(500);
-  line(x, 0, x, height);
-  line(0, y, width, y);
+  line(x, 5, x, height);
+  line(5, y, width, y);
   
   // UI
   image(GloopFrame, 0, 1, windowWidth, windowHeight) //frame around the game
@@ -101,14 +101,14 @@ function drawScene1() {
   noStroke();
   fill(250);
   textSize(15);
-  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 100, 150);
+  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 100, 100);
   fill(250);
   textSize(15);
-  text('Someone Great - LCD Soundsystem.', 100, height - 100);
+  text('Someone Great - LCD Soundsystem.', 100, height - 70);
 
   // Button Text
   if (ButtonTapped) {
-    text('drag VHS to get funky', 100, 120);
+    text('drag VHS to get funky', 100, 70);
   }
 }
 
