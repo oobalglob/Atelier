@@ -100,15 +100,15 @@ function drawScene1() {
   // Text Labels
   noStroke();
   fill(250);
-  textSize(16);
-  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 100, 70);
+  textSize(15);
+  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 160, 180);
   fill(250);
-  textSize(13);
-  text('Someone Great - LCD Soundsystem.', 100, height - 80);
+  textSize(15);
+  text('Someone Great - LCD Soundsystem.', 150, height - 150);
 
   // Button Text
   if (ButtonTapped) {
-    text('drag VHS to get funky', 100, 90);
+    text('drag VHS to get funky', 160, 150);
   }
 }
 
@@ -131,9 +131,9 @@ function drawScene2() {
 
   noStroke();
   fill(200);
-  font()
+  // font()
   textSize(20);
-  text('create your beat to please it', 150, 450);
+  text('create a tune to please it', 150, 450);
 }
 
 // Resize canvas when window is resized
