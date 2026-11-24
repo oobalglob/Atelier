@@ -130,9 +130,9 @@ function drawScene2() {
   image (dude, 700, 100) //evil monster getting you
 
   noStroke();
-  fill(200);
+  fill(500);
   // font()
-  textSize(20);
+  textSize(15);
   text('create a tune to please it', 150, 450);
 }
 
