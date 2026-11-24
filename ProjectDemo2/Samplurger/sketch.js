@@ -101,14 +101,14 @@ function drawScene1() {
   noStroke();
   fill(250);
   textSize(15);
-  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 120, 150);
+  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 100, 150);
   fill(250);
   textSize(15);
-  text('Someone Great - LCD Soundsystem.', 150, height - 150);
+  text('Someone Great - LCD Soundsystem.', 100, height - 250);
 
   // Button Text
   if (ButtonTapped) {
-    text('drag VHS to get funky', 160, 150);
+    text('drag VHS to get funky', 100, 120);
   }
 }
 
