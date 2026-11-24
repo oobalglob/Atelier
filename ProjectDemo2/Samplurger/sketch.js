@@ -1,4 +1,4 @@
-let ButtonTapped = false; // Has the player tapped to unlock the sound?
+// let ButtonTapped = false; // Has the player tapped to unlock the sound?
 
 function userSetupComplete() {
   ButtonTapped = true;
