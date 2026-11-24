@@ -101,7 +101,7 @@ function drawScene1() {
   noStroke();
   fill(250);
   textSize(14);
-  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 110, 100);
+  text('Speed ' + nf(speed, 1, 2) + '   Volume ' + nf(volume, 1, 2), 110, 100);
   fill(250);
   textSize(14);
   text('Someone Great - LCD Soundsystem.', 110, height - 70);
@@ -128,7 +128,7 @@ function drawScene2() {
   image(GloopFrame, 0, 1, windowWidth, windowHeight) //frame around the game
   image(VHS,x-(VHS.width/2),y-(VHS.height/2)); //VHS tape
 
-  image (dude, 700, 100) //evil monster getting you
+  image (dude, 400, 100) //evil monster getting you
 
   noStroke();
   fill(500);
