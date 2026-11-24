@@ -100,15 +100,16 @@ function drawScene1() {
   // Text Labels
   noStroke();
   fill(250);
-  textSize(15);
-  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 100, 100);
+  textSize(14);
+  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 110, 100);
   fill(250);
-  textSize(15);
-  text('Someone Great - LCD Soundsystem.', 100, height - 70);
+  textSize(14);
+  text('Someone Great - LCD Soundsystem.', 110, height - 70);
 
   // Button Text
   if (ButtonTapped) {
-    text('drag VHS to get funky', 100, 70);
+    textSize(14);
+    text('drag VHS to get funky', 110, 70);
   }
 }
 
@@ -120,7 +121,7 @@ function drawScene2() {
   let x = map(speed, slowest, fastest, 0, width);
   let y = map(volume, 0, 1, height, 70);
   stroke(500);
-  line(x, 0, x, height);
+  line(x, 5, x, height);
   line(0, y, width, y);
 
   // UI
