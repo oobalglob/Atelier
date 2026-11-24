@@ -128,7 +128,7 @@ function drawScene2() {
   image(GloopFrame, 0, 1, windowWidth, windowHeight) //frame around the game
   image(VHS,x-(VHS.width/2),y-(VHS.height/2)); //VHS tape
 
-  image (dude, 450, 100) //evil monster getting you
+  image (dude, 400, 50) //evil monster getting you
 
   noStroke();
   fill(500);
