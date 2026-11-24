@@ -90,7 +90,7 @@ function drawScene1() {
   let x = map(speed, slowest, fastest, 0, width);
   let y = map(volume, 0, 1, height, 70);
   stroke(500);
-  line(x, 70, x, height);
+  line(x, 0, x, height);
   line(0, y, width, y);
   
   // UI
@@ -104,7 +104,7 @@ function drawScene1() {
   text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 100, 150);
   fill(250);
   textSize(15);
-  text('Someone Great - LCD Soundsystem.', 100, height - 250);
+  text('Someone Great - LCD Soundsystem.', 100, height - 100);
 
   // Button Text
   if (ButtonTapped) {
