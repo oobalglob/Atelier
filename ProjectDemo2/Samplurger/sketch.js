@@ -101,7 +101,7 @@ function drawScene1() {
   noStroke();
   fill(250);
   textSize(15);
-  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 160, 180);
+  text('p5.sound · speed ' + nf(speed, 1, 2) + '   volume ' + nf(volume, 1, 2), 120, 150);
   fill(250);
   textSize(15);
   text('Someone Great - LCD Soundsystem.', 150, height - 150);
