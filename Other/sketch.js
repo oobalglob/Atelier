@@ -2,7 +2,7 @@
 // Hold the phone flat, then tilt it like a tray. On a laptop, move the mouse.
 // Key data: me.name, me.hue, me.x, me.y (yours), the same names in guests[i] (theirs)
 
-const SHARE_HOST = 'https://oobalglob.github.io/Atelier/ProjectDemo2/Samplurger';   // the class server
+const SHARE_HOST = 'https://oobalglob.github.io/Atelier/Other';   // the class server
 const ROOM = 'class';    // your room
 const MY_NAME = '';      // your name
 const sprites = [];
