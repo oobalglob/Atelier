@@ -57,6 +57,7 @@ function Sprite(sheet, x, y, scl){
 async function setup() {
   createCanvas(windowWidth, windowHeight);
 
+  dude = await loadImage("assets/dude.png");
   shadow =  await loadImage("assets/Shadow.png");
   GloopFrame = await loadImage("assets/GloopFrame.png");
  
@@ -130,16 +131,16 @@ function draw() {
     const py = height / 2 + person.y * r;
     noStroke();
     fill(person.hue, 70, 100);
-    sprites[1].draw(px, py, d);
+    image(dude, width / 2.5 + me.x * r, height / 3 + me.y * r, d + 80 * k);
     fill(0, 0, 100);
     text(person.name, px, py - d / 2 - 4 * k);
   }
 
   // a ring round my own dot
-  noFill();
-  stroke(me.hue, 70, 100);
-  strokeWeight(3 * k);
-  circle(width / 2 + me.x * r, height / 2 + me.y * r, d + 16 * k);
+  // noFill();
+  // stroke(me.hue, 70, 100);
+  // strokeWeight(3 * k);
+  // circle(width / 2 + me.x * r, height / 2 + me.y * r, d + 16 * k);
 
   checkTouches(everyone, d / r);
   drawBursts(r, k);
@@ -201,10 +202,10 @@ function drawWhoIAm(k) {
   strokeWeight(12 * k);
   rect(0, 0, width, height);
   noStroke();
-  fill(me.hue, 70, 100);
+  fill(280, 100, 90);
   textAlign(CENTER, CENTER);
-  textSize(20 * k);
-  text('you are ' + me.name, width / 2, 26 * k);
+  textSize(30 * k);
+  text('Samplurger', width / 2, 26 * k);
 }
 
 function windowResized() {
