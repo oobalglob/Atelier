@@ -2,7 +2,7 @@
 // Hold the phone flat, then tilt it like a tray. On a laptop, move the mouse.
 // Key data: me.name, me.hue, me.x, me.y (yours), the same names in guests[i] (theirs)
 
-const SHARE_HOST = '';   // the class server
+const SHARE_HOST = 'https://p5-phone-share.npuckett.workers.dev';   // the class server
 const ROOM = 'a1-lagoon';    // Host room
 const MY_NAME = '';      // Characters name
 const sprites = [];
