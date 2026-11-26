@@ -3,8 +3,8 @@
 // Key data: me.name, me.hue, me.x, me.y (yours), the same names in guests[i] (theirs)
 
 const SHARE_HOST = 'https://oobalglob.github.io/Atelier/Other';   // the class server
-const ROOM = 'class';    // your room
-const MY_NAME = '';      // your name
+const ROOM = 'a1-lagoon';    // Host room
+const MY_NAME = '';      // Characters name
 const sprites = [];
 
 const ANIMALS = ['Simba', 'Shadow', 'Frank', 'Paul', 'Coco', 'Scooby'];
