@@ -47,7 +47,7 @@ async function setup() {
   shadow =  await loadImage("assets/Shadow.png");
   GloopFrame = await loadImage("assets/GloopFrame.png");
   VHS = await loadImage("assets/VHS.png");
-  dude = await loadImage("assets/dude.png");
+  // dude = await loadImage("assets/dude.png");
  
   lockGestures();
   sprites.push(new Sprite(shadow, 0, 300, 1) );
@@ -62,12 +62,13 @@ async function setup() {
 // Draw function for whole game
 function draw() {
   if (ButtonTapped) {
-    if (speed > 2.0 && volume > 0.5) {
-    drawScene2();
-    }
-    else{
-        drawScene1();
-    }
+    drawScene1();
+    // if (speed > 2.0 && volume > 0.5) {
+    // drawScene2();
+    // }
+    // else{
+    //     drawScene1();
+    // }
   } 
 }
 
