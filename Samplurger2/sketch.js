@@ -61,6 +61,9 @@ async function setup() {
   shadow =  await loadImage("assets/Shadow.png");
   GloopFrame = await loadImage("assets/GloopFrame.png");
  
+  enableSoundTap('Tap to hear magic');
+  tick = await loadSound(SomeoneGreatFile);
+
   lockGestures();
   sprites.push(new Sprite(shadow, 0, 300, 1) );
   sprites.push(new Sprite(shadow, 0, 300, 1) );
@@ -94,10 +97,25 @@ function draw() {
   background(10);
   colorMode(HSB);
 
+  // Loop starts as soon as the sound is on
+  if (ButtonTapped && !looping) {
+    tick.loop();
+    tick.play();
+    looping = true;
+  }
+
+  // Read mouse/finger input 
+  if (ButtonTapped && mouseIsPressed) {
+    speed = map(mouseX, 0, width, slowest, fastest, true);
+    volume = map(mouseY, height, 70, 0, 1, true);
+    tick.rate(speed);
+    tick.amp(volume, 0.05);
+  }
+
   // two numbers from -1 to 1, in steps of 0.05
   if (gotTilt) {
-    me.x = round(constrain(rotationY / 30, -1, 1) * 20) / 20;   // left and right
-    me.y = round(constrain(rotationX / 30, -1, 1) * 20) / 20;   // towards you and away
+    me.x = round(constrain(rotationX / 30, -1, 1) * 20) / 20;   // left and right
+    me.y = round(constrain(rotationY / 30, -1, 1) * 20) / 20;   // towards you and away
   } else {
     me.x = round(constrain(map(mouseX, 0, width, -1, 1), -1, 1) * 20) / 20;
     me.y = round(constrain(map(mouseY, 0, height, -1, 1), -1, 1) * 20) / 20;
